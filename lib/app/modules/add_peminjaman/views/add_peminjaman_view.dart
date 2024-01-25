@@ -23,7 +23,7 @@ class AddPeminjamanView extends GetView<AddPeminjamanController> {
                     decoration:
                         InputDecoration(hintText: "Masukkan Tanggal Pinjam"),
                     validator: (value) {
-                      if (value!.isEmpty!) {
+                      if (value!.isEmpty) {
                         return "Tanggal pinjam tidak boleh kosong";
                       }
                       return null;
@@ -33,7 +33,7 @@ class AddPeminjamanView extends GetView<AddPeminjamanController> {
                     decoration:
                         InputDecoration(hintText: "Masukkan Tanggal Kembali"),
                     validator: (value) {
-                      if (value!.isEmpty!) {
+                      if (value!.isEmpty) {
                         return "Tanggal kembali tidak boleh kosong";
                       }
                       return null;

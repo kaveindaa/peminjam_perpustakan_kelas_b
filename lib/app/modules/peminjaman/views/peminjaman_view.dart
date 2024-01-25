@@ -19,7 +19,7 @@ class PeminjamanView extends GetView<PeminjamanController> {
                 return ListTile(
                   title: Text("${state[index].book?.judul}"),
                   subtitle: Text(
-                      "${state[index].status} Oleh: ${state[index].user?.nama} \nPinjam: ${state[index].tanggalPinjam} \nKembali: ${state[index].tanggalKembali}"),
+                      "${state[index].status}  \nPinjam: ${state[index].tanggalPinjam} \nKembali: ${state[index].tanggalKembali}"),
                 );
               },
               separatorBuilder: (context, index) {
